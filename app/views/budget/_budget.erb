@@ -126,7 +126,7 @@
         <th>Cost</th>
         <th>Team</th>
         <th>Paid by</th>
-        <th>Reimbused?</th>
+        <th>Reimbursed?</th>
       </tr> 
 
       <% @group.spends.sort_by { |spend| [spend.reimbursed ? 1 : 0, spend.team.try(:name) || '', -spend.amount] }.each { |spend| %>
